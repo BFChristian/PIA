@@ -21,16 +21,16 @@ def pedir_legajo(mensaje="Ingrese legajo: "):
         print("El legajo debe ser un número entero positivo.")
 
 def pedir_calificacion():
-    """Solicita una calificación válida (0–10) al usuario."""
+    """Solicita una calificación válida (0-10) al usuario."""
     while True:
         entrada = input("  Ingrese calificación (0 a 10): ").strip()
         try:
             nota = float(entrada)
             if 0 <= nota <= 10:
                 return nota
-            print("  ⚠  La calificación debe estar entre 0 y 10.")
+            print("La calificación debe estar entre 0 y 10.")
         except ValueError:
-            print("  ⚠  Ingrese un número válido.")
+            print("Ingrese un numero valido.")
 
 
 def mostrar_estudiante(est):
